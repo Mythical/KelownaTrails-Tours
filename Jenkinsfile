@@ -27,7 +27,7 @@ pipeline {
             }
             steps {
                 sh 'firebase use production'
-                sh 'firebase deploy --only hosting'
+                sh 'firebase deploy --only hosting "$FIREBASE_TOKEN"'
             }
         }
     }
