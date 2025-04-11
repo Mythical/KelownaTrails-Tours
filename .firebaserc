@@ -7,6 +7,9 @@
       "hosting": {
         "production": [
           "kelownatrails-production-47516"
+        ],
+        "staging": [
+          "kelownatrails-staging-47516"
         ]
       }
     }
