@@ -20,7 +20,8 @@ pipeline {
 
         stage('Staging') {
             steps {
-                sh 'firebase deploy --only hosting:kelownatrails-staging-47516'
+                sh 'firebase use staging'
+                sh 'firebase deploy --only hosting'
             }
         }
 
@@ -29,7 +30,8 @@ pipeline {
                 branch 'main'
             }
             steps {
-                sh 'firebase deploy --only hosting:kelownatrails-production-47516'
+                sh 'firebase use production'
+                sh 'firebase deploy --only hosting'
             }
         }
     }
