@@ -26,8 +26,6 @@ pipeline {
         }
 
         stage('Production') {
-            when {
-                branch 'main'
             }
             steps {
                 sh 'firebase use production'
