@@ -9,6 +9,9 @@
       "hosting": {
         "staging": [
           "kelownatrails-staging-47516"
+        ],
+        "production": [
+          "kelownatrails-production-47516"
         ]
       }
     },
@@ -19,6 +22,6 @@
         ]
       }
     }
-  }
+  },
+  "etags": {}
 }
-
