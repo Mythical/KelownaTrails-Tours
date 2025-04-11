@@ -1,13 +1,19 @@
 {
   "projects": {
-    "default": "kelownatrails-staging-47516"
+    "default": "kelownatrails-staging-47516",
+    "staging": "kelownatrails-staging-47516",
+    "production": "kelownatrails-production-47516"
   },
   "targets": {
     "kelownatrails-staging-47516": {
       "hosting": {
         "staging": [
           "kelownatrails-staging-47516"
-        ],
+        ]
+      }
+    },
+    "kelownatrails-production-47516": {
+      "hosting": {
         "production": [
           "kelownatrails-production-47516"
         ]
