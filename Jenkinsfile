@@ -26,7 +26,6 @@ pipeline {
         }
 
         stage('Production') {
-            }
             steps {
                 sh 'firebase use production'
                 sh 'firebase deploy --only hosting:production'
