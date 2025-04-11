@@ -1,0 +1,11 @@
+{
+  "name": "kelownatrails-tours",
+  "version": "1.0.0",
+  "description": "Fake package for Jenkins pipeline",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No test specified\" && exit 0"
+  },
+  "author": "Youness",
+  "license": "ISC"
+}
