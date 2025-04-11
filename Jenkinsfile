@@ -16,8 +16,8 @@ pipeline {
 
         stage('Staging') {
             steps {
-                sh 'firebase use staging'
-                sh 'firebase deploy --only hosting'
+                sh 'FIREBASE_TOKEN="$FIREBASE_TOKEN" firebase use staging'
+                sh 'FIREBASE_TOKEN="$FIREBASE_TOKEN" firebase deploy --only hosting'
             }
         }
 
@@ -26,9 +26,10 @@ pipeline {
                 branch 'main'
             }
             steps {
-                sh 'firebase use production'
-                sh 'firebase deploy --only hosting "$FIREBASE_TOKEN"'
+                sh 'FIREBASE_TOKEN="$FIREBASE_TOKEN" firebase use production'
+                sh 'FIREBASE_TOKEN="$FIREBASE_TOKEN" firebase deploy --only hosting'
             }
         }
     }
 }
+
