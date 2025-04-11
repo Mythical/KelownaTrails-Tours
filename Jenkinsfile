@@ -20,6 +20,7 @@ pipeline {
 
         stage('Staging') {
             steps {
+                sh 'firebase use staging'
                 sh 'firebase deploy --only hosting:staging'
             }
         }
@@ -29,6 +30,7 @@ pipeline {
                 branch 'main'
             }
             steps {
+                sh 'firebase use production'
                 sh 'firebase deploy --only hosting:production'
             }
         }
